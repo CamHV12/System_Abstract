@@ -1,0 +1,11 @@
+package System;
+
+public class AreaTriangle extends Shape{
+
+	@Override
+	public void getCalculateAcreage() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

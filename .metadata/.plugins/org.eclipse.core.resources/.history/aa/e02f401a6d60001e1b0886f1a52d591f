@@ -1,0 +1,54 @@
+package System;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AddressBook extends Contact {
+	private List<Contact> list;
+
+	public AddressBook(String name, String address, String phone, String email) {
+		super(name, address, phone, email);
+	}
+
+	public AddressBook() {
+		list = new ArrayList<>();
+	}
+
+	public void add(Contact contact) {
+		list.add(contact);
+	}
+
+	public void remove(Contact contact) {
+		list.remove(contact);
+	}
+
+	public void find(String value, int chon) {
+		for (Contact contact : list) {
+			if ((chon == 1 && value.equalsIgnoreCase(contact.getName()))
+					|| (chon == 2 && value.equalsIgnoreCase(contact.getAddress()))
+					|| (chon == 3 && value.equalsIgnoreCase(contact.getPhone()))
+					|| (chon == 4 && value.equalsIgnoreCase(contact.getEmail()))) {
+				contact.displayContactInfo();
+			} else {
+				System.out.println("Không tìm thấy");
+			}
+		}
+	}
+
+	public void displayInfo() {
+		System.out.println("Danh ba liên hệ:");
+		for (Contact contact : list) {
+			contact.displayContactInfo();
+		}
+	}
+
+	@Override
+	public void displayContactInfo() {
+		System.out.println("Name:" + getName());
+		System.out.println("Address:" + getAddress());
+		System.out.println("Phone:" + getPhone());
+		System.out.println("Email:" + getEmail());
+		// TODO Auto-generated method stub
+
+	}
+}

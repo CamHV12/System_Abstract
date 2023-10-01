@@ -1,0 +1,18 @@
+package System;
+
+public class AreaCircle extends Shape {
+
+	@Override
+	public double getCalculateAcreage() {
+		// TODO Auto-generated method stub
+		double r = 4;
+		return r*r*3.14;
+	}
+
+	@Override
+	public double getCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

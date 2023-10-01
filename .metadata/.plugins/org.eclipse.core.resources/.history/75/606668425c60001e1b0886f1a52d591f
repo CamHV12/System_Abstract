@@ -1,0 +1,11 @@
+package System;
+
+public class AreaCircle extends Shape{
+
+	@Override
+	public int getCalculateAcreage() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

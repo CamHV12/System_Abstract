@@ -1,0 +1,11 @@
+package System;
+
+public class AreaSquare extends Shape {
+
+	@Override
+	public float getCalculateAcreage() {
+		
+		return a*b;
+	}
+
+}

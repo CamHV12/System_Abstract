@@ -1,0 +1,19 @@
+package System;
+
+public class AreaTriangle extends Shape{
+
+	@Override
+	public double getCalculateAcreage() {
+		// TODO Auto-generated method stub
+		double a = 4;
+		double h = 4;
+		return 1/2*a*h;
+	}
+
+	@Override
+	public double getCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

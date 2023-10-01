@@ -1,0 +1,42 @@
+package System;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Contact contact = new AddressBook("", "", "", "");
+		Contact contact1 = new AddressBook("1", "1", "1", "1");
+		AddressBook addressBook = new AddressBook();
+		addressBook.add(contact);
+		addressBook.add(contact1);
+		addressBook.displayInfo();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("1. Thêm :");
+		System.out.println("2. Xóa :");
+		System.out.println("3. Hiển thị :");
+		System.out.println("Bạn muốn chọn :");
+		int chon = sc.nextInt();
+		while (true) {
+			switch (chon) {
+			case 1: {
+				System.out.println("Thêm vào danh bạ");
+				addressBook.add(contact);
+				addressBook.add(contact1);
+				break;
+			}
+			case 2: {
+				System.out.println("Xóa khỏi danh bạ");
+				addressBook.remove(contact);
+				break;
+			}
+			case 3: {
+				System.out.println("Hiển thị danh bạ");
+				addressBook.displayInfo();
+				break;
+			}
+			default:
+				throw new IllegalArgumentException("Hãy chọn lại!!");
+			}
+		}
+	}
+}

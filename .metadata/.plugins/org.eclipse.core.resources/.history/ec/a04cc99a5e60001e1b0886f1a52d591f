@@ -1,0 +1,17 @@
+package System;
+
+public class AreaSquare extends Shape {
+
+	@Override
+	public double getCalculateAcreage() {
+		double a = 4;
+		return a * a;
+	}
+
+	@Override
+	public double getCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
