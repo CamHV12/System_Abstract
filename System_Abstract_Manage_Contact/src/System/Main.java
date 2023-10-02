@@ -4,6 +4,13 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
+		/*
+		 * Bài tập 2: Quản lý danh bạ. Tạo một ứng dụng quản lý danh bạ với các lớp
+		 * Contact (trừu tượng) và AddressBook. Lớp Contact sẽ chứa thông tin liên hệ
+		 * (tên, địa chỉ, điện thoại, email), và lớp AddressBook sẽ quản lý danh sách
+		 * các đối tượng Contact. Triển khai thêm các phương thức như thêm, xóa và tìm
+		 * kiếm liên hệ.
+		 */
 		Contact contact = new AddressBook("", "", "", "");
 		Contact contact1 = new AddressBook("1", "1", "1", "1");
 		AddressBook addressBook = new AddressBook();
